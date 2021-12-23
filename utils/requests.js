@@ -1,4 +1,4 @@
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.API_KEY
 export default {
     fetchTrending: {
         title: "Trending",
@@ -43,5 +43,5 @@ export default {
     fetchTv: {
         title: "Tv Movie",
         url: `/discover/movie?api_key=${API_KEY}&with_genres=10770`
-    },
+    }
 }

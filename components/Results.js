@@ -1,12 +1,12 @@
 import Thumbnail from "./Thumbnail"
-
-function Results({ requests }) {
+import FlipMove from "react-flip-move"
+function Results({ results }) {
     return (
-        <div>
-            {requests.map(result => (
+        <FlipMove className="px-5 my-10 sm:grid md:grid-2 xl:grid-cols-3 3xl:flex flex-wrap justify-center">
+            {results.map((result) => (
                 <Thumbnail key={result.id} result={result} />
             ))}
-        </div>
+        </FlipMove>
     )
 }
 
